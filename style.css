@@ -383,5 +383,18 @@ text-align: center;
         width: auto;
         height: auto;
     }
+    .section_1>.icons>.icon>i
+    {
+        font-size: 20px;
+    }
+    .section_1>.icons>.icon>p
+    {
+        font-size: 15px;
+    }
+    .section_4
+    {
+        width: auto;
+        height: auto;
+    }
 
 }
