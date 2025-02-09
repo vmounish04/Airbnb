@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Airbnb</title>
+    
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3hkOOtjm6-GUGtjHdAO-xMXyEGew92S6R6g&s">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="airbnb">
+        <div class="head">
+            <div class="headtop">
+                <div class="logo">
+                    <img src="data:image/png;base64,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" alt="Airbnb">
+
+                </div>
+                <div class="links">
+                    <a href="#">Stays</a>
+                    <a href="#">Experiences</a>
+                </div>
+                <div class="info">
+                    <a href="#">Airbnb your home</a>
+                    <i class="bi bi-globe"></i>
+                    <div class="profile">
+                        <i class="bi bi-justify"></i>
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                   
+                </div>
+             
+                
+            </div>
+
+            <div class="headbottom">
+                <div class="text">
+                    <h5>Where</h5>
+                    <p>Search destination</p>
+                </div>
+                <div class="text">
+                    <h5>Check in</h5>
+                    <p>Add dates</p>
+                </div>
+                <div class="text">
+                    <h5>Check out </h5>
+                    <p>Add dates</p>
+                </div>
+                <div class="search">
+                    <div class="text">
+                        <h5>Who </h5>
+                        <p>Add guests</p>
+                    </div>
+                    <div class="icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section_1">
+            <div class="icons">
+                <div class="icon">
+                    <i class="bi bi-shop-window"></i>
+                    <p>Window</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-hospital"></i>
+                    <p>Hospital</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-airplane"></i>
+                    <p>Airplane</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-backpack3"></i>
+                    <p>Backpack</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-android2"></i>
+                    <p>Android</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-bank"></i>
+                    <p>Bank</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-binoculars"></i>
+                    <p>Binoculars</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-boombox"></i>
+                    <p>Boombox</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-building"></i>
+                    <p>Building</p>
+                </div>
+                <div class="icon">
+                    <i class="bi bi-cart3"></i>
+                    <p>Shoping</p>
+                </div>
+
+            </div>
+            <div class="btns">
+                <button class="filter">
+                    <i class="bi bi-sliders"></i>
+                    <span>Filters</span>
+                </button>
+                <button class="display">
+                    <span>Display total before taxes</span>
+                </button>
+                
+            </div>
+        </div>
+
+        <div class="section_2">
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-5264493/original/10d2c21f-84c2-46c5-b20b-b51d1c2c971a.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Ponta Delgada, Portugal</span>
+                    <span><i class="bi bi-star-fill"></i> 4.95</span>
+                </div>
+                <p> 10,266 kilometres away</p>
+                <p>5-10 Jan</p>   
+                <p><span>₹12,017</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/f7f79d47-7d08-4b2d-acaa-8117736b6c7b.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Western Cape, South Africa</span>
+                    <span><i class="bi bi-star-fill"></i> 4.94</span>
+                </div>
+                <p> 8,053 kilometres away</p>
+                <p>2-7 Mar</p>   
+                <p><span>₹10,544 </span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/d0e3bb05-a96a-45cf-af92-980269168096.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Sindun-myeon,South Korea</span>
+                    <span><i class="bi bi-star-fill"></i>4.84</span>
+                </div>
+                <p>5,613 kilometres away</p>
+                <p>2-7 Feb</p>   
+                <p><span>₹6,194</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-713793474951553871/original/b2bacc9e-a410-44d9-9fdb-d025a7f28285.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Brålanda, Sweden</span>
+                    <span><i class="bi bi-star-fill"></i> 4.95</span>
+                </div>
+                <p> 7,347 kilometres away</p>
+                <p> 26 Feb-3 Mar</p>   
+                <p><span> ₹37,179 </span> night</p> 
+            </div>
+
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/448bee34-7416-4262-a02f-b39e29d7ce4f.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Hua Hin District, Thailand</span>
+                    <span><i class="bi bi-star-fill"></i> 5.0</span>
+                </div>
+                <p> 2,429 kilometres away</p>
+                <p> 10-15 Feb</p>   
+                <p><span> ₹11,619</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-908611595823138745/original/e2ea2ccc-df2a-4e49-b81d-a508508aae02.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.98</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹39,667</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1061463378616582524/original/07f1afed-44cb-429e-a794-e9fe674051ad.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Brålanda, Sweden</span>
+                    <span><i class="bi bi-star-fill"></i> 4.95</span>
+                </div>
+                <p> 7,347 kilometres away7,347 kilometres away</p>
+                <p> 26 Feb-3 Mar</p>   
+                <p><span> ₹37,179 </span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1169286884178002264/original/f597f004-449e-4217-b858-3f29942eeb1b.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Râșnov Romacril,Romania</span>
+                    <span><i class="bi bi-star-fill"></i> 5.0</span>
+                </div>
+                <p>6,072 kilometres away6,072 kilometres away</p>
+                <p>2-7 Febr</p>   
+                <p><span>₹7,990 </span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/1587524e-f8f5-4c20-8507-c809dffda998.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.7</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹6,667</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-43316780/original/e5f00c7b-ed64-4d88-b386-631ca1d42b92.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.99</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹55,667</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/2c0f4b90-e315-4f30-bf1e-8ea885e75948.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.95</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹39,667</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/9e13d2f9-d180-4f1c-aa3c-48cffad34c32.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.88</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹25,865</span> night</p> 
+            </div>
+
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTgwMTA4OTIxNDU1NDcwODMz/original/a33eeb62-a82c-4424-9016-99e9164bd815.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Siquijor, Philippines</span>
+                    <span><i class="bi bi-star-fill"></i> 4.98</span>
+                </div>
+                <p>5,023 kilometres away</p>
+                <p>30 Apr-5 May</p>   
+                <p><span> ₹8,450</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-46130832/original/65de82db-e347-461e-a66b-5d15f16afbe3.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Siquijor, Philippines</span>
+                    <span><i class="bi bi-star-fill"></i> 4.85</span>
+                </div>
+                <p>5,023 kilometres away</p>
+                <p>30 Apr-5 May</p>   
+                <p><span> ₹7,450</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTA5NTQxNDc4NDM3MTkzODU2NQ%3D%3D/original/9ce4f044-3b5b-4fc0-9ec0-144d62669dc0.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Siquijor, Philippines</span>
+                    <span><i class="bi bi-star-fill"></i> 4.76</span>
+                </div>
+                <p>5,023 kilometres away</p>
+                <p>30 Apr-5 May</p>   
+                <p><span> ₹28,670</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/337660c5-939a-439b-976f-19219dbc80c7.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Siquijor, Philippines</span>
+                    <span><i class="bi bi-star-fill"></i> 4.93</span>
+                </div>
+                <p>5,023 kilometres away</p>
+                <p>30 Apr-5 May</p>   
+                <p><span> ₹21,877</span> night</p> 
+            </div>
+
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/ae441b77-ba8a-4cb3-b4b1-647b6376d776.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Bingin Beach, Indonesia</span>
+                    <span><i class="bi bi-star-fill"></i> 5.0</span>
+                </div>
+                <p>4,802 kilometres away</p>
+                <p>9-14 Feb</p>   
+                <p><span> ₹35,431</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/0c7865ec-d2f0-4fd1-8e29-3613d0a86724.jpg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.96</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹45,865</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-53356466/original/f353fb80-0915-40ab-8032-6bc810ac273e.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.96</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹25,865</span> night</p> 
+            </div>
+            <div class="image">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-817850350448415036/original/15f18ffe-be9b-404d-89df-c6a2e3d0aaf4.jpeg?im_w=720&im_format=avif">
+                <div class="span">
+                    <span>Göppingen, Germany</span>
+                    <span><i class="bi bi-star-fill"></i> 4.94</span>
+                </div>
+                <p>  7,311 kilometres away</p>
+                <p> 5-10 Feb</p>   
+                <p><span> ₹13,465</span> night</p> 
+            </div>
+          
+        </div>
+
+        <div class="section_3">
+            <h4>Continue exploring OMG! homes</h4>
+            <button>Show more</button>
+        </div>
+
+        <div class="section_4">
+            <h2>Inspiration for future getaways</h2>
+            <div class="footer">
+                <div class="text">
+                    <h4>Support</h4>
+                    <p>Help Centre</p>
+                    <p>AirCover</p>  
+                    <p>Anti-discrimination</p>   
+                    <p>Disability support</p>   
+                    <p>Cancellation options</p>   
+                    <p>Report neighbourhood concern</p>   
+                </div>
+    
+                <div class="text">
+                    <h4>Hosting</h4>
+                    <p>Airbnb your home</p>
+                    <p>AirCover for Hosts</p>
+                    <p>Hosting resources</p>
+                    <p>Community forum</p>
+                    <p>Hosting responsibly</p>
+                    <p>Join a free Hosting class</p>
+                    <p>Find a co-host</p>
+                </div>
+    
+                <div class="text">
+                    <h4>Airbin</h4>
+                    <p> Newsroom</p>
+                    <p>New features</p>
+                    <p>Careers</p>
+                    <p>Investors</p>
+                    <p>Airbnb.org emergency stays</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
